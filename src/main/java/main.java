@@ -14,7 +14,7 @@ public class main {
 		TF1 tf1 = new TF1(new ArrayList<> (Arrays.asList(reuters)));
 		CBC cbc = new CBC(new ArrayList<> (Arrays.asList(reuters, cp, ap)));
 		CBS cbs = new CBS(new ArrayList<> (Arrays.asList(ap)));
-		//step2 PBS pbs = new PBS(new ArrayList<> (Arrays.asList(ap)));
+		PBS pbs = new PBS(new ArrayList<> (Arrays.asList(ap)));
 
 		ow.broadcast(new NewsItem("AM", "France", "slalom ski", "gold"));
 		ow.broadcast(new NewsItem("AM", "Canada", "men hockey", "bronze"));
