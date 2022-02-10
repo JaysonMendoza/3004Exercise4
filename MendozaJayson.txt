@@ -1,0 +1,17 @@
+Repo Link: https://github.com/JaysonMendoza/3004Exercise4
+STATUS: RUN
+PROGRESS: Completed
+
+VIDEO LINK: Not required
+
+NOTES:
+	Using datastructures in the jdk is not thread safe and a concurrency issue
+occured when the PBS class attempted to unsubscribe while the Subject is still 
+iterating over observers. Since the professor wants simplicity I opted to copy
+the observer list before iterating which would only work in our simple case.
+
+Alternativly I could have made the class fully thread safe and converted it to use
+threads and a semaphore.
+
+I did try to use a semaphore at one point but had unexpected results so I abandoned
+it instead of investing the time in order to figure out why I had a wait deadlock.
