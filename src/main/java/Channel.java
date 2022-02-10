@@ -3,7 +3,8 @@ import java.util.List;
 
 public abstract class Channel implements Observer {
     protected HashSet<NewsAgency> subAgencies;
-    String channelName;
+    private final String channelName;
+
     Channel(List<NewsAgency> agencies,String channelName) {
         subAgencies = new HashSet<>(agencies);
         this.channelName = channelName;
